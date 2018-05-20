@@ -2,14 +2,14 @@
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: black;/*#f1f1f1*/
   padding: 20px 10px;
 }
 
 /* Style the header links */
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
   padding: 12px;
   text-decoration: none;
@@ -22,6 +22,8 @@
 .header a.logo {
   font-size: 25px;
   font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  Color: Blue;
 }
 
 /* Change the background color on mouse-over */
@@ -34,17 +36,20 @@
 .header a.active {
   background-color: blue;/*dodgerblue*/
   color: white;
+  Font-size: 20px;
 }
 
 /* Float the link section to the right */
 .header-right {
   float: right;
-  margin-right: -90px;
+  margin-right: 35px;
 }
 
-.fa fa-phone{
-  color:red;
+* {
+  box-sizing: border-box;
 }
+
+
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
@@ -74,7 +79,7 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 60px;/*16px before*/
+    padding: 14px 50px;/*16px before*/
     text-decoration: none;
     font-size: 17px;
 }
