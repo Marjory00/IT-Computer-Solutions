@@ -39,8 +39,12 @@
 /* Float the link section to the right */
 .header-right {
   float: right;
+  margin-right: -90px;
 }
 
+.fa fa-phone{
+  color:red;
+}
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
@@ -70,7 +74,7 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 60px;/*16px before*/
     text-decoration: none;
     font-size: 17px;
 }
