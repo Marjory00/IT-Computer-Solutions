@@ -38,3 +38,10 @@ $(document).ready(function($) {
 
 //End Section Background//
 //END Section Home Background//
+
+//API TEST//
+
+//END API TEST//
+//ANIMATION COL//
+
+//END ANIMATION COL//
