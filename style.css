@@ -1,55 +1,78 @@
- /*Section Header*/
+/*DISABLE the Horizontal Scroll*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+} 
+
+/*Section Header*/
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
-  padding: 20px 10px;
+  background-color: black;/*#f1f1f1*/
+  padding: 0px 20px;
+  text-decoration: none;
 }
 
 /* Style the header links */
 .header a {
   float: left;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 12px;
+  padding: 8px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: bold;
+  font-family: 'Orbitron', sans-serif;
+  Color: Blue;
+  text-decoration: none;
 }
 
 /* Change the background color on mouse-over */
 .header a:hover {
   background-color: #ddd;
   color: black;
+  text-decoration: none;
 }
 
 /* Style the active/current link*/
 .header a.active {
   background-color: blue;/*dodgerblue*/
   color: white;
+  Font-size: 12px;
+  text-decoration: none;
 }
 
 /* Float the link section to the right */
 .header-right {
-  float: right;
+  float: left;
+  margin-right: 1px;
+  text-decoration: none;
 }
+
+* {
+  box-sizing: border-box;
+}
+
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
-    float: none;
+    float: left;
     display: block;
-    text-align: left;
+    text-align: center;
+    text-decoration: none;
   }
   .header-right {
-    float: none;
+    float: right;
+    text-decoration: none;
   }
 }
 
@@ -70,7 +93,7 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 30px;/*16px before*/
     text-decoration: none;
     font-size: 17px;
 }
@@ -166,7 +189,7 @@
 /* Dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: relative;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -192,15 +215,90 @@
 .dropdown:hover .dropdown-content {
   display: block;
 } 
+
 /*END dropdown main menu*/
 
+/*Section Home*/
+#home { 
+  background: url('https://s7.postimg.cc/735sp5l2j/computer-technology-wallpaper-.jpg') 50% 0 repeat fixed; min-height: 100px;
+  display: flex;
+  height: 600px; 
+  margin: 0 auto; 
+  margin-top: 0%;
+  width: 100%; 
+  max-width: 100%; 
+  position: relative;
+  font-size: 65px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#home
+h1 { 
+  height: 458px; 
+  position: relative; 
+  text-align: center; 
+  top: 10px; 
+  width: 100%;
+  font-size: 70px;
+  margin: 200px;
+  margin-left: 0%;
+  color: white;
+}
+
+/*END Section Home*/
+/* Section About */
+/*section id="about"*/
+#about { 
+  background: url('https://s7.postimg.cc/3l81hnncr/White-_Background-_HD.jpg') 50% 0 repeat fixed; min-height: 390px; 
+  height: 550px; /*it was 600px before*/
+  margin: 0 auto; 
+  display: flex;
+  width: 100%; 
+  max-width: 100%; 
+  position: relative; 
+  font-size: 20px;
+  color:black;
+  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#about 
+.p { 
+  height: 460px; 
+  position: relative; /*absolute before*/
+  text-align: justify;/*to align text*/ 
+  top: 20px; 
+  width: 95%; /*100% before*/
+  margin-left: 20px;/*to align text*/
+  padding: 20px;/*to align text*/
+}
+
+/*END Section About*/
+
+/*GOOGLE API TEST*/
+
+
+/*END GOOGLE API TEST*/
 
 /*Section Footer*/
-header, footer {
-    padding: 1em;
-    color: white;
-    background-color: black;
-    clear: left;
+
+footer {
+    margin: auto;
+    height: 130px;
+    width: 100%;
+    background-color: #1e2127;
+    color: #ffffff;
+}
+
+footer span {
+    display:block;
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
-    font-size: 14px;
+  padding: 3%;
 }
