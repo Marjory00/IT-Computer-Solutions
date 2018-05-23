@@ -63,3 +63,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 } 
 //END TOP Button//
+
+//Title Home Test Animation//
+document.getElementById("test").children[0].className += " load";
+//END Title Test Animation//

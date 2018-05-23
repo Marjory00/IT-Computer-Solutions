@@ -240,19 +240,39 @@ html, body {
   background-size: cover;
 }
 #home
-h1 { 
+p { 
   height: 458px; 
   position: relative; 
   text-align: center; 
-  top: 10px; 
+  top: 200px; 
   width: 100%;
   font-size: 70px;
-  margin: 200px;
+  margin: 0px;
   margin-left: 0%;
-  color: white;
+  color: White;
 }
 
 /*END Section Home*/
+/*Test Home Title*/
+#test p {
+    opacity: 0;
+    font-size: 21px;
+    margin-top: 25px;
+    text-align: center;
+  font-size: 65px;
+  color: White;
+
+    -webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+}
+
+#test p.load {
+    opacity: 10;
+}
+/*END Test Home Title*/
 
 /* Section About #4 */
 /*section id="about"*/
