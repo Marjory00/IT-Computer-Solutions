@@ -17,7 +17,7 @@
 
 <body>
 
-  <!DOCTYPE html>
+  
 <html lang="en">
 <html>
 <head>
@@ -159,18 +159,18 @@ body {
 <div class="container">
     <h2>About Us</h2>
   <br>
-  <br>
   <!-- About Section -->
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-6">
-     <img src='https://s7.postimg.cc/psta3h5rv/Technology101.jpg' class="w3-round w3-image w3-opacity-min" alt="Technology">
+    <div id="boxshadow">
+  <div class="row slideanim">
+    <div class="col-sm-5">
+      <br>
+   <img src='https://s7.postimg.cc/psta3h5rv/Technology101.jpg' class="w3-round w3-image w3-opacity-min" alt="Technology" style="width:95%">
   </div>
-<div class="col-6">
- <p class="w3-large">We provide IT Consulting services, web development, and computer repair services to end-users and businesses to develop, use and integrate IT systems. <br>
-   We help to resolve computer and IT network technical problems with solutions to maximize the value of technology business.
+    <div class="col-sm-7">
+  <br>
+ <p>We provide IT Consulting, Web Development, and Computer Repair services to end-users and small businesses to develop, use and integrate IT systems. Our goal is to resolve computer and IT network technical problems with solutions to maximize the value of technology business.<br><br>
   Our responsibilities are:<br>
-    <br>
    <li>Understand customer requirements and business objectives.
     <li>Provide strategic advice on using technology to achieve goals.
     <li>Revise existing systems and suggest improvements. Produce reports.
@@ -179,11 +179,16 @@ body {
     <li>Train users in new and existing IT systems
      <li>Provide assistance with technical issues in computer and IT networks.
      <li>Front End Development Services.</p>
-      
+     <br>
+     <br>
+   <br>
    </div>
-  </div>
- 
+  </div> 
 </section>
+       <br>
+      <br>
+       <br>
+      <br>
     <!--END Section About Us-->
     
   <!--Section #5 Computer Repair-->
@@ -195,7 +200,7 @@ body {
   <br>
   <div class="row slideanim">
     <div class="col-sm-4">
-      <img src='https://s7.postimg.cc/ot8uwdawr/computer-repair-devices.png' class="w3-round w3-image w3-opacity-min" style width="80%" height="100px"; alt="PC">
+      <img src='https://s7.postimg.cc/ot8uwdawr/computer-repair-devices.png' class="w3-round w3-image w3-opacity-min" style width="80%" height="100px" alt="PC">
       <h4>POWER</h4>
       <p><li>PC Troubleshooting
 <li>No Power
@@ -210,7 +215,7 @@ body {
 <li>Hardware Diagnosis Repair or Replacement</p>
    </div>
     <div class="col-sm-4">
-      <img src='https://s7.postimg.cc/tlbd9p6vf/mac-book-rep.jpg' class="w3-round w3-image w3-opacity-min" style width="80%" height="100px"; alt="Mac">
+      <img src='https://s7.postimg.cc/tlbd9p6vf/mac-book-rep.jpg' class="w3-round w3-image w3-opacity-min" style width="80%" height="100px"; alt="Mac" class="hover-shadow"></a>
       <h4>INSTALLATION</h4>
       <p><li>Battery Replacement
 <li>Memory Upgrade
@@ -241,13 +246,55 @@ body {
   <br>
   <br>
   <br>
-  <br>
+ 
   <!--END Test Draft Computer Services-->
-  
-</section>
-   
+  </div>
+</section>   
 <!--END Section Computer Repair-->
  
+  <!--Section # Contact-->
+<section id="contact" data-type="background" data-speed="10" class="pages">
+<div class="container-fluid text-center">
+    <h2>Contact</h2>
+  <!-- Container (Contact Section) -->
+<div id="contact-card" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Maryland, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> 000-000-0000</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> joitcomputersolutions@hotmail.com</p>
+    </div>
+<div class="col-sm-6 slideanim">
+ <div class="row">
+ <div class="col-sm-6 form-group">
+  <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+ </div>
+  <div class="col-sm-6 form-group">
+  <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+ </div>
+  </div>
+  <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+ <div class="row">
+   <div class="col-sm-12" "form-group">
+   <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>                                                   </div>
+  <style>
+   #contact {
+      height: 500px;
+     padding: 0%;
+     margin-bottom: -5px;
+    }
+    #row{
+      height: 200px;
+    }
+    
+ #container-fluid{
+    height: 300px;
+    }
+  </style>
+  </section> 
  <!--Section Footer-->
 <footer>
     <span>Copyright &copy;
