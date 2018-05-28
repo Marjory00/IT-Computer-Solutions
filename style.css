@@ -64,7 +64,6 @@ html, body {
   box-sizing: border-box;
 }
 
-
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
@@ -229,6 +228,10 @@ html, body {
 /*Section Home #3*/
 #home { 
   background: url('https://s7.postimg.cc/735sp5l2j/computer-technology-wallpaper-.jpg') 50% 0 repeat fixed; min-height: 100px;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   display: flex;
   height: 600px; 
   margin: 0 auto; 
@@ -280,8 +283,12 @@ p {
 /* Section About #4 */
 /*section id="about"*/
 #about { 
-  background: url('https://s7.postimg.cc/3l81hnncr/White-_Background-_HD.jpg') 50% 0 repeat fixed; min-height: 390px; 
+  background: url('https://s7.postimg.cc/8uxfljuez/wallpaper-920432.jpg') 50% 0 repeat fixed; min-height: 390px; 
   height: 580px; /*it was 600px before*/
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   margin: 0 auto; 
   display: flex;
   width: 100%; 
@@ -295,6 +302,8 @@ p {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Slabo 27px', serif;
+  font-size: 18px;
 }
 #about 
 .p { 
@@ -305,8 +314,9 @@ p {
   width: 95%; /*100% before*/
   margin-left: 10px;/*to align text*/
   padding: 20px;/*to align text*/
-  font-size: 19px;
   margin-right: 100%;
+  font-family: 'Slabo 27px', serif;
+  font-size: 18px;
 }
 
 h2 {

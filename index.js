@@ -32,16 +32,11 @@ $(document).ready(function($) {
 		e.preventDefault() // prevent default action - hash doesn't appear in url
    		$(this).parent().find( 'div' ).toggleClass( 'card__social--active' );
 		$(this).toggleClass('share-expanded');
-    });
-  
+    }); 
 });
 
 //End Section Background//
 //END Section Home Background//
-
-//API TEST//
-
-//END API TEST//
 //ANIMATION COL//
 
 //END ANIMATION COL//
