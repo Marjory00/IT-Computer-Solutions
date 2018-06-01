@@ -55,7 +55,7 @@ html, body {
 /* Float the link section to the right */
 .header-right {
   float: right;
-  margin-right: 1px;
+  margin-right: 120px;
   text-decoration: none;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -95,7 +95,7 @@ html, body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 30px;/*16px before*/
+    padding: 12px 20px;/*16px before*/
     text-decoration: none;
     font-size: 17px;
 }
@@ -250,9 +250,9 @@ p {
   height: 458px; 
   position: relative; 
   text-align: center; 
-  top: 200px; 
+  top: 160px; 
   width: 100%;
-  font-size: 70px;
+  font-size: 65px;
   margin: 0px;
   margin-left: 0%;
   color: White;
@@ -276,15 +276,17 @@ p {
 }
 
 #test p.load {
-    opacity: 10;
+    opacity: 15;
 }
 /*END Test Home Title*/
 
 /* Section About #4 */
 /*section id="about"*/
+ /*background: url('https://s7.postimg.cc/8uxfljuez/wallpaper-920432.jpg')*/
 #about { 
-  background: url('https://s7.postimg.cc/8uxfljuez/wallpaper-920432.jpg') 50% 0 repeat fixed; min-height: 390px; 
-  height: 650px; /*it was 600px before*/
+  background: url('https://s7.postimg.cc/3l81hnncr/White-_Background-_HD.jpg')
+  50% 0 no repeat fixed; min-height: 390px; 
+  height:800px; /*it was 600px before*/
   background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -294,103 +296,104 @@ p {
   width: 100%; 
   max-width: 100%; 
   position: relative; 
-  font-size: 15px;
   color:black;
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  /*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-size: 18px;
-   font: 400 18px Lato, sans-serif;
 }
-#about 
-.p { 
-  height: auto; 
-  position: absolute; /*absolute before*/
-  text-align:justify;/*to align text*/ 
-  top: 20px; 
-  width: 100%; /*100% before*/
-  margin-left: -30px;/*to align text*/
-  padding: -5px;/*to align text*/
-  margin-right: 10%;
-  font-family: 'Slabo 14px', serif;
-  font-size: 14px;
-}
+
 
 h2 {
   text-align: center;
 }
 
-/*Draft1 About*/
-#boxshadow {
-    position: relative;
-    -moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
-    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-    box-shadow: 2px 2px 4px rgba(0, 5, 5, 5);/*0,0,0,0.5 before*/
-    padding: 1px;
-    background: white;
-    width:100%;
-   max-width: 100%;
-  font: 14.5px Lato, sans-serif;
-  height: auto;
-  margin-left: -1%;
-  margin-right:-18%;
+/*   */
+/*   */
+.bg-gray {
+    background-color: #f8f8f8;
+}
+module, .module-cover {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    padding: 120px 0 100px;
 }
 
-/* Make the image fit the box */
-#boxshadow img {
-    width: 100%;
-  height:70%;
-    border: 1px solid #8a4419;
-    border-style: inset;
-  margin-left: 9%;
+.col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
-#boxshadow::after {
-    content: '';
-    position: relative;
-    z-index: -1; /* hide shadow behind image */
-    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);                
-    width: 70%; 
-    left: 15%; /* one half of the remaining 30% */
-    bottom: 0;
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+.icon-box-left {
+    text-align: left;
+}
+.lead {
+    letter-spacing: .01875rem;
+}
+.lead {
+    font-size: .9375rem;
+    font-weight: 400;
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
-    .col-sm-5 .col-7 {
-        width: 100%;
-      height:35%;
-      display:flex;
-    }
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .col {
-        width: 70%;
-        height:35%;
-      display:flex;
-    }
+icon-box-left .icon-box-icon {
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    left: 0;
+    text-align: center !important;
+    line-height: 2.375rem;
+    font-size: 2.1875rem;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  .col-sm-7 {
-    font-size: 12px;
-  }
+[class*=" ti-"], [class^="ti-"] {
+    font-family: themify;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 12px */
-@media screen and (max-width: 600px) {
-  .col-sm-7 {
-    font-size: 12px;
-  }
+*, ::before, ::after {
+    box-sizing: border-box;
 }
+
+[class*=" ti-"], [class^="ti-"] {
+    font-family: themify;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-box .icon-box-title h6 {
+    margin: 0 0 12px;
+}
+h4, .h4 {
+    font-weight: 500;
+}
+h4, .h4 {
+    font-size: .875rem;
+}
+
 /*END Section About*/
 
 /*Computer Repair Section*/
@@ -422,9 +425,11 @@ background: url('https://s7.postimg.cc/3l81hnncr/White-_Background-_HD.jpg') 50%
   -o-background-size: cover;
   background-size: cover;
 }
+
 #computer repair 
 .h3 { 
-  height: 600px; 
+  
+  height: 700px; 
   position: relative; /*absolute before*/
   text-align: justify;/*to align text*/ 
   top: 20px; 
@@ -450,8 +455,8 @@ background: url('https://s15.postimg.cc/6hrcd75ej/Gray-plain-website-background.
   position: relative; 
   font-size: 16px;
   color:black;
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  /*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -476,6 +481,7 @@ footer {
     width: 100%;
     background-color: #1e2127;
     color: #ffffff;
+    font size 12px;
 }
 
 footer span {
