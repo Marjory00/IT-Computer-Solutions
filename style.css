@@ -4,7 +4,7 @@ html, body {
     overflow-x: hidden;
 } 
 
-/*Section Header*/
+/*Section Header #1 */
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
@@ -48,26 +48,28 @@ html, body {
   color: white;
   Font-size: 12px;
   text-decoration: none;
+  background-color: grey;
+  text-decoration: none;
 }
 
 /* Float the link section to the right */
 .header-right {
-  float: left;
-  margin-right: 1px;
+  float: right;
+  margin-right: 120px;
   text-decoration: none;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
-
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
   .header a {
-    float: left;
+    float: none;/*left before*/
     display: block;
-    text-align: center;
+    text-align: left;/*center before*/
     text-decoration: none;
   }
   .header-right {
@@ -78,7 +80,7 @@ html, body {
 
 /*END Section Header*/
 
-/* Section TopNav*/
+/* Section TopNav #2 */
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -93,7 +95,7 @@ html, body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 30px;/*16px before*/
+    padding: 12px 20px;/*16px before*/
     text-decoration: none;
     font-size: 17px;
 }
@@ -167,6 +169,7 @@ html, body {
 .dropdown {
   float: left;
   overflow: hidden;
+  text-decoration: none;
 }
 
 /* Dropdown button */
@@ -179,11 +182,13 @@ html, body {
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
+  text-decoration: none;
 }
 
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: green;
+  text-decoration: none;
 }
 
 /* Dropdown content (hidden by default) */
@@ -194,6 +199,7 @@ html, body {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  text-decoration: none;
 }
 
 /* Links inside the dropdown */
@@ -209,6 +215,7 @@ html, body {
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
+  text-decoration: none;
 }
 
 /* Show the dropdown menu on hover */
@@ -218,9 +225,13 @@ html, body {
 
 /*END dropdown main menu*/
 
-/*Section Home*/
+/*Section Home #3*/
 #home { 
   background: url('https://s7.postimg.cc/735sp5l2j/computer-technology-wallpaper-.jpg') 50% 0 repeat fixed; min-height: 100px;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   display: flex;
   height: 600px; 
   margin: 0 auto; 
@@ -235,24 +246,171 @@ html, body {
   background-size: cover;
 }
 #home
-h1 { 
+p { 
   height: 458px; 
   position: relative; 
   text-align: center; 
-  top: 10px; 
+  top: 160px; 
   width: 100%;
-  font-size: 70px;
-  margin: 200px;
+  font-size: 65px;
+  margin: 0px;
   margin-left: 0%;
-  color: white;
+  color: White;
 }
 
 /*END Section Home*/
-/* Section About */
+/*Test Home Title*/
+#test p {
+    opacity: 0;
+    font-size: 21px;
+    margin-top: 25px;
+    text-align: center;
+  font-size: 65px;
+  color: White;
+
+    -webkit-transition: opacity 2s ease-in;
+       -moz-transition: opacity 2s ease-in;
+        -ms-transition: opacity 2s ease-in;
+         -o-transition: opacity 2s ease-in;
+            transition: opacity 2s ease-in;
+}
+
+#test p.load {
+    opacity: 15;
+}
+/*END Test Home Title*/
+
+/* Section About #4 */
 /*section id="about"*/
+ /*background: url('https://s7.postimg.cc/8uxfljuez/wallpaper-920432.jpg')*/
 #about { 
-  background: url('https://s7.postimg.cc/3l81hnncr/White-_Background-_HD.jpg') 50% 0 repeat fixed; min-height: 390px; 
-  height: 550px; /*it was 600px before*/
+  background: url('https://s7.postimg.cc/3l81hnncr/White-_Background-_HD.jpg')
+  50% 0 no repeat fixed; min-height: 390px; 
+  height:800px; /*it was 600px before*/
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  margin: 0 auto; 
+  display: flex;
+  width: 100%; 
+  max-width: 100%; 
+  position: relative; 
+  color:black;
+  /*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+/*   */
+/*   */
+.bg-gray {
+    background-color: #f8f8f8;
+}
+module, .module-cover {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+    padding: 120px 0 100px;
+}
+
+.col-lg-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+.icon-box-left {
+    text-align: left;
+}
+.lead {
+    letter-spacing: .01875rem;
+}
+.lead {
+    font-size: .9375rem;
+    font-weight: 400;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+icon-box-left .icon-box-icon {
+    position: absolute;
+    height: 38px;
+    width: 38px;
+    left: 0;
+    text-align: center !important;
+    line-height: 2.375rem;
+    font-size: 2.1875rem;
+}
+
+[class*=" ti-"], [class^="ti-"] {
+    font-family: themify;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+[class*=" ti-"], [class^="ti-"] {
+    font-family: themify;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-box .icon-box-title h6 {
+    margin: 0 0 12px;
+}
+h4, .h4 {
+    font-weight: 500;
+}
+h4, .h4 {
+    font-size: .875rem;
+}
+
+/*END Section About*/
+
+/*Computer Repair Section*/
+img { 
+  opacity: 0.9; 
+} 
+
+img:hover { 
+  opacity: 7; 
+}
+/*END Computer Repair Section*/
+
+/* Section Computer Repair #5 */
+/*section id="computer repair"*/
+.computer repair { 
+background: url('https://s7.postimg.cc/3l81hnncr/White-_Background-_HD.jpg') 50% 0 repeat fixed; min-height: 390px; 
+  height: 850px; /*it was 600px before*/
   margin: 0 auto; 
   display: flex;
   width: 100%; 
@@ -267,9 +425,11 @@ h1 {
   -o-background-size: cover;
   background-size: cover;
 }
-#about 
-.p { 
-  height: 460px; 
+
+#computer repair 
+.h3 { 
+  
+  height: 700px; 
   position: relative; /*absolute before*/
   text-align: justify;/*to align text*/ 
   top: 20px; 
@@ -278,21 +438,50 @@ h1 {
   padding: 20px;/*to align text*/
 }
 
-/*END Section About*/
+/*END Section Computer Repair*/
 
-/*GOOGLE API TEST*/
+/*Computer Repair Animations*/
 
+/*END PC Repair Animations*/
+/*Contact Section*/
 
-/*END GOOGLE API TEST*/
+#contact { 
+background: url('https://s15.postimg.cc/6hrcd75ej/Gray-plain-website-background.jpg') 50% 0 repeat fixed; min-height: 390px; 
+  height: 850px; /*it was 600px before*/
+  margin: 0 auto; 
+  display: flex;
+  width: 100%; 
+  max-width: 100%; 
+  position: relative; 
+  font-size: 16px;
+  color:black;
+  /*-webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#contact 
+.h2 { 
+  height: 380px; 
+  position: relative; /*absolute before*/
+  text-align: justify;/*to align text*/ 
+  top: 20px; 
+  width: 95%; /*100% before*/
+  margin-left: 20px;/*to align text*/
+  padding: 20px;/*to align text*/
+}
 
-/*Section Footer*/
-
+/*END Contact Section*/
+/*footer section*/
 footer {
     margin: auto;
-    height: 130px;
+    height: 150px;
     width: 100%;
     background-color: #1e2127;
     color: #ffffff;
+    font size 12px;
 }
 
 footer span {
@@ -302,3 +491,24 @@ footer span {
     text-align: center;
   padding: 3%;
 }
+/*Create a Scroll To Top Button*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: green; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+/*END Create a Scroll To Top Button*/
