@@ -95,7 +95,7 @@ html, body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 12px 20px;/*16px before*/
+    padding: 12px 16px;/*16px before*/
     text-decoration: none;
     font-size: 17px;
 }
@@ -285,7 +285,7 @@ p {
  /*background: url('https://s7.postimg.cc/8uxfljuez/wallpaper-920432.jpg')*/
 #about { 
   background: url('https://s7.postimg.cc/3l81hnncr/White-_Background-_HD.jpg')
-  50% 0 no repeat fixed; min-height: 390px; 
+  50% 0 no repeat fixed; min-height: 100px; 
   height:800px; /*it was 600px before*/
   background-attachment: fixed;
     background-position: center;
