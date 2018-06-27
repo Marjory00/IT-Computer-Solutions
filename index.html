@@ -414,11 +414,11 @@ p {
   <!--Create a Scroll To Top Button-->
    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
    <script>
-// When the user scrolls down 10px from the top of the document, show the button
+// When the user scrolls down 5px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 5 || document.documentElement.scrollTop > 5) {
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
